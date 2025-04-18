@@ -1,0 +1,55 @@
+stepik lessons:
+
+# четность
+a = int(input())
+print(a % 2 == 0)
+
+# четность 6
+a = int(input())
+print(a % 6 == 0)
+
+# четность 9
+a = int(input())
+print(a % 9 != 0)
+
+
+a, b = map(int, input().split())
+a1 = (a % 7 == 0)
+b1 = (b % 7 == 0)
+print(a1 and b1)
+
+a, b, c = map(int, input().split())
+print(a == b == c)
+
+import math
+a = int(input())
+b = int(input())
+c = int(input())
+xb = math.ceil(b / 2)
+xa = math.ceil(a / 2)
+xc = math.ceil(c / 2)
+print(xa + xb + xc)
+
+
+
+import math
+L, W, H = map(int, input().split())
+S = L * H + H * W
+print(math.ceil(S / 8))
+
+
+
+a = "Я стану крутым программистом!" 
+print((a + "\n") * 3)
+
+
+print("Я стану крутым программистом!")
+print("Я стану крутым программистом!")
+print("Я стану крутым программистом!")
+
+
+# Сохраняем фразу в переменную
+phrase = "Я стану крутым программистом!"
+
+# Выводим фразу три раза на отдельных строках
+print(phrase, phrase, phrase, sep="\n", end="")
