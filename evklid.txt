@@ -1,0 +1,39 @@
+
+a, b = map(int, input().split())  # Ввод чисел
+a1, b1 = a, b                     # для НОК
+
+while b > 0:
+    a, b = b, a % b
+print(f'НОД - {a}')                     
+print(f'НОК - {a1 * b1 / a}') 
+
+A, B = map(int, input().split())
+while A != B:
+    if A > B:
+        A = A - B
+    else:
+        B = B - A
+print(A)
+
+
+a, b = map(int, input().split())
+n = a * b
+while b > 0:
+    c = a % b
+    a = b
+    b = c
+print(int(n / a))
+
+def gcd_subtraction(a, b):
+    while a != b:
+        if a > b:
+            a -= b
+        else:
+            b -= a
+    return a
+
+# Пример использования:
+A = int(input("Введите первое число: "))
+B = int(input("Введите второе число: "))
+
+print("НОД чисел", A, "и", B, "равен", gcd_subtraction(A, B))
